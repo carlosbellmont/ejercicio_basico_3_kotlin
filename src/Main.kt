@@ -1,17 +1,17 @@
 fun main(args: Array<String>) {
     val lista = crearLista()
-    var contenido = ""
-    var sumatorio = 0.0
+    var contenidoString = ""
+    var sumatorioDouble = 0.0
     lista.forEach {
         when (it) {
-            is String -> contenido += "$it "
-            is Double -> sumatorio += it
-            is Int -> sumatorio += it
+            is String -> contenidoString += "$it "
+            is Double -> sumatorioDouble += it
+            is Int -> sumatorioDouble += it
         }
     }
     println("La lista contiene $lista")
-    println("El contenido contiene $contenido")
-    println("El sumatorio contiene $sumatorio")
+    println("El contenido contiene $contenidoString")
+    println("El sumatorio contiene $sumatorioDouble")
 
 }
 
